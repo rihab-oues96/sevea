@@ -1,0 +1,366 @@
+$btn-green: #679b1c;
+$btn-perpule: #7f408f;
+$title-grey: #bab6b6;
+
+$footer-bg: #f2f2f2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 62.5%;
+}
+
+header {
+  .header-top {
+    color: $btn-green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    .logo {
+      width: 20rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .sign {
+      color: $btn-green;
+      font-size: 1.2rem;
+      font-weight: 500;
+      width: 13rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .right {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .cart {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+      .cart-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.search {
+  text-align: -webkit-center;
+  .vague {
+    width: 100vw;
+    z-index: 2;
+    position: relative;
+    margin-bottom: -1rem;
+
+    .v-image {
+      width: 100%;
+      height: 10rem;
+      margin-bottom: -6rem;
+      margin-top: 10rem;
+    }
+  }
+
+  .bg-image {
+    .bg-img {
+      width: 100vw;
+      object-fit: cover;
+      height: 20rem;
+      clip-path: polygon(
+        44% 16%,
+        72% 0,
+        100% 0,
+        100% 70%,
+        100% 100%,
+        53% 100%,
+        21% 100%,
+        0 100%,
+        0 17%,
+        18% 23%
+      );
+    }
+  }
+
+  .form {
+    width: 65rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: -8rem;
+    background: rgba(255, 255, 255, 0.525);
+
+    input,
+    select,
+    .btn {
+      width: 18rem;
+      height: 3rem;
+      border: none;
+      padding: 1rem;
+    }
+
+    input,
+    select {
+      color: grey;
+    }
+    .btn {
+      background-color: $btn-perpule;
+      color: white;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.145rem;
+    }
+  }
+}
+.big-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: $title-grey;
+  font-weight: bold;
+}
+
+.big-btn {
+  background-color: $btn-perpule;
+  width: 22rem;
+  height: 4rem;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+}
+
+.slides-images {
+  margin: 12rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 90%;
+    height: 30rem;
+  }
+
+  .swiper {
+    width: 80%;
+    height: fit-content;
+    --swiper-theme-color: white;
+    .swiper-slide img {
+      width: 100%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: white;
+    }
+  }
+}
+
+.promotions,
+.marques {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .cards {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    justify-content: space-between;
+
+    .card {
+      padding: 1.5rem;
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -2px 4px 10px -2px rgb(181 181 186 / 41%);
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 12rem;
+      }
+      .line {
+        margin: 1rem 0;
+        width: 80%;
+        height: 1.5px;
+        background-color: #f9fafb;
+        border: 1px solid #d8d8d8;
+      }
+
+      .reduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #679b1c;
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+        border-radius: 4px;
+        margin-top: -1.8rem;
+      }
+
+      p {
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 20px;
+        color: #2e2e2e;
+        font-weight: 400;
+      }
+      span {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: #bab6b6;
+        font-weight: 700;
+
+        text-align: center;
+      }
+
+      .prix {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        color: $btn-perpule;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .btn-add {
+        display: flex;
+        width: 15rem;
+        height: 2.7rem;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+        background: $btn-green;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.fournisseurs {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .cards {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    justify-content: space-between;
+
+    .card {
+      width: 16rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 95%;
+      }
+
+      span {
+        background: $btn-green;
+        color: white;
+        width: 90%;
+        height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $footer-bg;
+
+  .logo {
+    width: 16rem;
+    margin-top: 4rem;
+  }
+
+  .info {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem;
+
+    ul {
+      width: 12rem;
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      font-size: 1rem;
+      gap: 10%;
+      color: #808080;
+
+      .title {
+        color: $btn-green;
+        font-weight: bold;
+      }
+    }
+  }
+  .copyright {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: $btn-perpule;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer .info {
+    flex-direction: column;
+  }
+}
